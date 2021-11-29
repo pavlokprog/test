@@ -14,6 +14,7 @@ import './src/config/private/webpack-env';
 // Config
 import envConfig from './src/config/private/environment';
 import projConfig from './src/config/private/project';
+import { SourceMap } from 'module';
 
 // =============================
 // Config
@@ -132,20 +133,15 @@ export default {
       reportFilename: 'report.html',
       openAnalyzer: false,
     }),
-    new webpack.DefinePlugin({
-      'process.env': {
-        BMAT_WEBSITE_TITLE: JSON.stringify(process.env.BMAT_WEBSITE_TITLE),
-        APP_ENV: JSON.stringify(process.env.APP_ENV),
-        API_URL: JSON.stringify(process.env.API_URL),
-        BMAT_DASHBOARD_URL: JSON.stringify(process.env.BMAT_DASHBOARD_URL),
-        GOOGLE_API_KEY: JSON.stringify(process.env.GOOGLE_API_KEY),
-        NODE_ENV: JSON.stringify(process.env.NODE_ENV),
-        SENTRY_DSN: JSON.stringify(process.env.SENTRY_DSN),
-        IS_HTTPS: JSON.stringify(process.env.IS_HTTPS),
-        BMAT_AUTH_CLIENT_ID: JSON.stringify(process.env.BMAT_AUTH_CLIENT_ID),
-        BMAT_AUTH_DOMAIN: JSON.stringify(process.env.BMAT_AUTH_DOMAIN),
-        BMAT_AUTH_REDIRECT_URI: JSON.stringify(process.env.BMAT_AUTH_REDIRECT_URI),
-      },
-    }),
+
   ],
 };
+
+b1
+
+{
+    SourceMap,
+    lskdf,
+    skdfn,
+}
+
